@@ -17,7 +17,6 @@ const config = {
   },
   "plugins": [
     "react",
-    "flowtype"
   ],
   "rules": {
     "comma-dangle": [2, "always-multiline"],
