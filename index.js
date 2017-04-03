@@ -16,32 +16,32 @@ const config = {
     "sourceType": "module"
   },
   "plugins": [
-    "react",
+    "react"
   ],
   "rules": {
-    "comma-dangle": [2, "always-multiline"],
-    "indent": [2, 2, { "SwitchCase": 1 }],
+    "comma-dangle": ["error", "always-multiline"],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
     "keyword-spacing": "error",
     "object-curly-spacing": ["error", "always"],
     "no-multiple-empty-lines": ["error", { "max": 1 }],
-    "linebreak-style": [2, "unix"],
-    "max-len": [2, 120, 4, { "ignoreUrls": true }],
-    "no-param-reassign": [2, { "props": false }],
-    "quotes": [2, "single"],
+    "linebreak-style": ["error", "unix"],
+    "max-len": ["error", 120, 4, { "ignoreUrls": true }],
+    "no-param-reassign": ["error", { "props": false }],
+    "quotes": ["error", "single"],
     "react/jsx-uses-react": 1,
     "react/jsx-uses-vars": 1,
-    "semi": [2, "always"],
-    "strict": [2, "never"]
+    "semi": ["error", "always"],
+    "strict": ["error", "never"]
   },
-  "indent": [2, 2],
-  "linebreak-style": [2, "unix"],
-  "max-len": [2, 120, 4, { "ignoreUrls": true }],
-  "no-param-reassign": [2, { "props": false }],
-  "quotes": [2, "single"],
+  "indent": ["error", 2],
+  "linebreak-style": ["error", "unix"],
+  "max-len": ["error", 120, 4, { "ignoreUrls": true }],
+  "no-param-reassign": ["error", { "props": false }],
+  "quotes": ["error", "single"],
   "react/jsx-uses-react": 1,
   "react/jsx-uses-vars": 1,
-  "semi": [2, "always"],
-  "strict": [2, "never"]
+  "semi": ["error", "always"],
+  "strict": ["error", "never"]
 };
 
 module.exports = config;
