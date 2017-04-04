@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "peerDependencies": {
-    "eslint": ">=3",
+  "devDependencies": {
+    "eslint": "^3.19.0",
     "eslint-plugin-react": "^4.0.0",
     "eslint-plugin-flowtype": "^2.30.2",
     "babel-eslint": "^7.1.1"
