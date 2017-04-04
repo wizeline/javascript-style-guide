@@ -21,6 +21,7 @@ module.exports = {
     "no-param-reassign": ["error", { "props": false }],
     "quotes": ["error", "single"],
     "semi": ["error", "always"],
-    "strict": ["error", "never"]
+    "strict": ["error", "never"],
+    "require-yield": "off"
   }
 };
