@@ -2,9 +2,7 @@
 Wizeline's ESLint rules for js environments
 
 ## Installation
-Add ESLint and Wizeline's lintern configs
-
-```npm install --save-dev eslint```
+Install Wizeline's lintern configs (ESLint is already included by default)
 
 ``` npm install --save-dev wizeline/eslint-config-wizeline ```
 
