@@ -3,12 +3,19 @@ module.exports = {
   "env": {
     "browser": true
   },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
   "plugins": [
-    "react"
+    "react",
+    "flowtype"
   ],
   "rules": {
-    "react/jsx-uses-react": 1,
-    "react/jsx-uses-vars": 1,
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
     "react/prefer-stateless-function": "error"
   }
 };

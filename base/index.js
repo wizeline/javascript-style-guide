@@ -1,11 +1,13 @@
-module.exporst = {
+module.exports = {
   "extends": "eslint:recommended",
+  "env": {
+    "es6": true,
+    "node": true
+  },
   "parserOptions": {
     "ecmaFeatures": {
-      "experimentalObjectRestSpread": true,
-      "jsx": true
+      "experimentalObjectRestSpread": true
     },
-    "ecmaVersion": 2016,
     "sourceType": "module"
   },
   "rules": {
@@ -22,4 +24,3 @@ module.exporst = {
     "strict": ["error", "never"]
   }
 };
-
