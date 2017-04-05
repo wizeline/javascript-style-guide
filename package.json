@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": ">=3"
+    "eslint": ">=3.19.0",
+    "eslint-plugin-react": ">=6.0.0",
+    "eslint-plugin-flowtype": ">=2.30.2",
+    "babel-eslint": ">=7.1.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
