@@ -23,6 +23,7 @@ module.exports = {
     "semi": ["error", "always"],
     "arrow-parens": ["error", "always"],
     "strict": ["error", "never"],
-    "require-yield": "off"
+    "require-yield": "off",
+    "prefer-const": "error"
   }
 };
