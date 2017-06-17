@@ -16,6 +16,7 @@ module.exports = {
   "rules": {
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
-    "react/prefer-stateless-function": "error"
+    "react/prefer-stateless-function": "error",
+    "flowtype/define-flow-type": 1
   }
 };
