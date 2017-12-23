@@ -1,22 +1,19 @@
 module.exports = {
-  "extends": "eslint-config-wizeline",
-  "env": {
-    "browser": true
-  },
-  "parser": "babel-eslint",
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    }
-  },
-  "plugins": [
-    "react",
-    "flowtype"
+  extends: [
+    'eslint-config-wizeline',
+    'plugin:flowtype/recommended',
+    'prettier/flowtype',
+    'prettier/react',
   ],
-  "rules": {
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error",
-    "react/prefer-stateless-function": "error",
-    "flowtype/define-flow-type": 1
-  }
+  env: {
+    browser: true,
+  },
+  parser: 'babel-eslint',
+  parserOptions: {
+    sourceType: 'module',
+  },
+  plugins: ['react', 'flowtype'],
+  rules: {
+    'react/jsx-filename-extension': 0,
+  },
 };
