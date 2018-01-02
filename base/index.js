@@ -1,44 +1,22 @@
 module.exports = {
-  "extends": "eslint:recommended",
-  "env": {
-    "es6": true,
-    "node": true
+  extends: ['airbnb', 'prettier'],
+  env: {
+    browser: true,
+    node: true,
   },
-  "globals": {
-    "SyntheticEvent": true,
-    "SyntheticAnimationEvent": true,
-    "SyntheticClipboardEvent": true,
-    "SyntheticCompositionEvent": true,
-    "SyntheticInputEvent": true,
-    "SyntheticUIEvent": true,
-    "SyntheticFocusEvent": true,
-    "SyntheticKeyboardEvent": true,
-    "SyntheticMouseEvent": true,
-    "SyntheticDragEvent": true,
-    "SyntheticWheelEvent": true,
-    "SyntheticTouchEvent": true,
-    "SyntheticTransitionEvent": true
+  globals: {
+    SyntheticEvent: true,
+    SyntheticAnimationEvent: true,
+    SyntheticClipboardEvent: true,
+    SyntheticCompositionEvent: true,
+    SyntheticInputEvent: true,
+    SyntheticUIEvent: true,
+    SyntheticFocusEvent: true,
+    SyntheticKeyboardEvent: true,
+    SyntheticMouseEvent: true,
+    SyntheticDragEvent: true,
+    SyntheticWheelEvent: true,
+    SyntheticTouchEvent: true,
+    SyntheticTransitionEvent: true,
   },
-  "parserOptions": {
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true
-    },
-    "sourceType": "module"
-  },
-  "rules": {
-    "comma-dangle": ["error", "always-multiline"],
-    "indent": ["error", 2, { "SwitchCase": 1 }],
-    "keyword-spacing": "error",
-    "object-curly-spacing": ["error", "always"],
-    "no-multiple-empty-lines": ["error", { "max": 1 }],
-    "linebreak-style": ["error", "unix"],
-    "max-len": ["error", 120, 4, { "ignoreUrls": true }],
-    "no-param-reassign": ["error", { "props": false }],
-    "quotes": ["error", "single"],
-    "semi": ["error", "always"],
-    "arrow-parens": ["error", "always"],
-    "strict": ["error", "never"],
-    "require-yield": "off",
-    "prefer-const": "error"
-  }
 };
