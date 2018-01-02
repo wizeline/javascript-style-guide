@@ -32,6 +32,8 @@ module.exports = {
     'no-else-return': 0,
     'no-prototype-builtins': 0,
     'no-unused-vars': [2, { varsIgnorePattern: '^_+$' }],
+    'no-unused-expressions': ['error', { allowTaggedTemplates: true }],
+
     'prettier/prettier': 2,
     quotes: 0,
     'react/jsx-filename-extension': 0,
