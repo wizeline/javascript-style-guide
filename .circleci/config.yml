@@ -1,0 +1,35 @@
+version: 2
+
+yarn_defaults: &yarn_defaults
+  docker:
+  - image: node:8.7.0
+
+npm_login: &npm_login
+  run:
+    name: Login to NPM
+    command: |
+      npm config set @wizeline:registry=https://verdaccio.wizeline.sh
+      npm config set //verdaccio.wizeline.sh/:_authToken=$NPM_TOKEN
+
+deployment:
+  production:
+    branch: master
+    commands:
+      - npm publish
+
+workflows:
+  version: 2
+  un-tagged-build:
+    jobs:
+      - build:
+          filters:
+            tags:
+              ignore: /^v.*/
+  tagged-build:
+    jobs:
+      - build:
+          filters:
+            branches:
+              ignore: /.*/
+	    tags:
+	      only: /^v.*/
