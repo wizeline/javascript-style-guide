@@ -37,6 +37,7 @@ module.exports = {
     'prettier/prettier': 2,
     quotes: 0,
     'react/jsx-filename-extension': 0,
+    'react/no-access-state-in-setstate': 2,
     'react/sort-comp': 0,
     'symbol-description': 0,
   },
