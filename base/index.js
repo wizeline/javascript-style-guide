@@ -26,7 +26,6 @@ module.exports = {
       'always',
       { annotationStyle: 'line' },
     ],
-    'global-require': 'off',
     'import/extensions': ['error', 'never', { packages: 'always' }],
     'import/no-extraneous-dependencies': 0,
     'import/no-named-as-default': [0],

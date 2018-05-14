@@ -9,6 +9,7 @@ module.exports = {
     'react',
   ],
   rules: {
+    'global-require': 'off',
     'react/jsx-filename-extension': 0,
     'react/no-access-state-in-setstate': 2,
     'react/sort-comp': 0,
