@@ -6,7 +6,7 @@ module.exports = {
     'prettier/react',
     'plugin:flowtype/recommended',
   ],
-  plugins: ['react', 'flowtype', 'flowtype-errors', 'prettier'],
+  plugins: ['react', 'flowtype', 'flowtype-errors'],
   rules: {
     semi: 0,
     'arrow-parens': 0,
@@ -33,8 +33,6 @@ module.exports = {
     'no-prototype-builtins': 0,
     'no-unused-vars': [2, { varsIgnorePattern: '^_+$' }],
     'no-unused-expressions': ['error', { allowTaggedTemplates: true }],
-
-    'prettier/prettier': 2,
     quotes: 0,
     'react/jsx-filename-extension': 0,
     'react/no-access-state-in-setstate': 2,
