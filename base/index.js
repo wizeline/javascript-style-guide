@@ -4,6 +4,10 @@ module.exports = {
     browser: true,
     node: true,
   },
+  plugins: ['prettier'],
+  rules: {
+    'prettier/prettier': 2,
+  },
   globals: {
     SyntheticEvent: true,
     SyntheticAnimationEvent: true,
