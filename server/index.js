@@ -1,16 +1,32 @@
 module.exports = {
   "extends": [
     'eslint-config-wizeline',
+    'prettier/flowtype',
+    'plugin:flowtype/recommended',
   ],
   "env": {
     "server": true,
     "node": true,
   },
+  "pluggins": [
+      'flowtype',
+      'flowtype-errors',
+  ],
   "rules": {
     semi: 0,
     'arrow-parens': 0,
     'class-methods-use-this': 0,
     curly: [2, 'multi-line'],
+    'flowtype-errors/enforce-min-coverage': [2, 70],
+    'flowtype-errors/show-errors': 2,
+    'flowtype/boolean-style': [2, 'boolean'],
+    'flowtype/no-dupe-keys': 2,
+    'flowtype/object-type-delimiter': 2,
+    'flowtype/require-valid-file-annotation': [
+      2,
+      'always',
+      { annotationStyle: 'line' },
+    ],
     'global-require': 'off',
     'import/extensions': ['error', 'never', { packages: 'always' }],
     'import/no-extraneous-dependencies': 0,
