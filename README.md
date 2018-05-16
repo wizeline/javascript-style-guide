@@ -21,4 +21,13 @@ For example, if you're working with a browser-related stack, you will need to ad
 {
   "extends": "eslint-config-wizeline/browser"
 }
+
+```
+
+If you're working with a server-related stack, you will need to add the following to your project's `.eslintrc`
+
+```json
+{
+  "extends": "eslint-config-wizeline/server"
+}
 ```
