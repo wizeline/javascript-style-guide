@@ -3,7 +3,6 @@ module.exports = {
     'eslint-config-wizeline',
   ],
   "env": {
-    "server": true,
     "node": true,
   },
 };
