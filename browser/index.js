@@ -5,6 +5,9 @@ module.exports = {
     'eslint-config-wizeline',
     'prettier/react',
   ],
+  env: {
+    browser: true,
+  },
   plugins: [
     'react',
   ],
